@@ -43,21 +43,34 @@
         background-color: #666;
       }
 
-      #swap-button {
-        display: none;
+      #app-switch {
         margin-left: auto;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      #app-switch .app-switch-label {
+        color: #ccc;
+        font-size: 12px;
+      }
+
+      #app-switch .swap-button {
         background-color: #444;
         color: white;
-        border: none;
+        border: 1px solid #666;
         padding: 4px 8px;
         border-radius: 4px;
-        border-color: #666;
-        border-style: solid;
         cursor: pointer;
       }
 
-      #swap-button:hover {
+      #app-switch .swap-button:hover {
         background-color: #666;
+      }
+
+      #app-switch .swap-button.active {
+        background-color: #4CAF50;
+        border-color: #4CAF50;
       }
        
       #keymap-panel {
@@ -162,7 +175,7 @@
         text-align: right;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-BDZV01NY.js"></script>
+    <script type="module" crossorigin src="/assets/index-LztBhklE.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CNcBfWiu.css">
   </head>
   <body>
