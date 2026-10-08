@@ -1,36 +1,29 @@
 {
   "version": 2,
--  "routes": [
-+  "rewrites": [
-     {
--      "src": "/(css|js|assets)/(.*)",
--      "dest": "public/$1/$2"
-+      "source": "/magnetical",
-+      "destination": "/index.html"
-     },
-     {
--      "src": "/(magnetical|magneto|optical|opto|strain)",
--      "dest": "public/index.html"
-+      "source": "/magneto",
-+      "destination": "/index.html"
-     },
-     {
--      "src": "/(.*)",
--      "dest": "public/index.html"
-+      "source": "/optical",
-+      "destination": "/index.html"
-+    },
-+    {
-+      "source": "/opto",
-+      "destination": "/index.html"
-+    },
-+    {
-+      "source": "/strain",
-+      "destination": "/index.html"
-+    },
-+    {
-+      "source": "/(.*)",
-+      "destination": "/index.html"
-     }
-   ]
+  "rewrites": [
+    {
+      "source": "/magnetical",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/magneto",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/optical",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/opto",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/strain",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
